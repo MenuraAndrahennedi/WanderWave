@@ -1,0 +1,306 @@
+@font-face {
+    font-family: navbar-font;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: title-font;
+    src: url(fonts/ClassicismoDEMO.otf);
+}
+@font-face {
+    font-family: titlebody-font;
+    src: url(fonts/ClarinetDEMO.otf);
+}
+@font-face {
+    font-family: button-font;
+    src: url(fonts/HeyComic.ttf);
+}
+@font-face {
+    font-family: body-font;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    min-height: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf8fa;
+}
+
+.content-section{
+    font-family: body-font, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #5d0557a1;
+    padding: 30px 10px;
+    transition: padding 0.7s;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 100;
+}
+
+header a{
+    font-family: navbar-font, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    border-radius: 40px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+header nav a:hover{
+    background-image: linear-gradient( to right, #ffae00,rgb(189, 7, 245));
+    color: #81177c;
+}
+
+header img{
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+
+
+/*----------------------home-------------------*/
+
+#banner{
+    background-image: url(media/homebg.png);
+}
+
+#banner div{
+    position:absolute;
+    text-align: center;
+}
+
+#banner h1{
+    text-align: center;
+    margin-top: 16%;
+    font-weight: 100;
+    font-family: title-font, sans-serif;
+    color: white;
+    font-size: 150px;
+    transition: 1.5s;
+}
+
+#banner h2{
+    margin-bottom: 3%;
+    padding: 10px 300px;
+    font-weight: 10;
+    font-family: titlebody-font, sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.btn{
+    font-family: button-font, sans-serif;
+    font-size: 30px;
+    color: white;
+    border: #81177c;
+    background-image: linear-gradient( to left, #ffae00,rgb(189, 7, 245));
+    padding: 18px 70px;
+    border-radius: 55px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    color:aliceblue;
+    background-image: linear-gradient( to right, #ffae00,rgb(189, 7, 245));
+}
+
+
+
+/*------------------------destinations------------------------------*/
+
+#destinations{
+    text-align:  center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+#destinations h1{
+    padding: 20px;
+    font-size: 70px;
+    color: #81177c;
+}
+
+.destinations{
+    text-align: center;
+    text-shadow: 0px 7px 8px black;
+    width: 90%;
+}
+
+.destination h2{
+    font-size: 40px;
+    font-weight: lighter;   
+}
+
+.destination{
+    position: relative;
+    width: 25%;
+    display:inline-block;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 130px 10px;
+    border-radius: 40px;
+    border: 10px solid white;
+    box-shadow: 0 0px 50px black;
+    transition: transform 0.6s ease;
+}
+
+.paris{
+    background-image: url(media/paris.png);
+}
+
+.nyc{
+    background-image: url(media/nyc.png);
+}
+
+.tokyo{
+    background-image: url(media/tokyo.png);
+}
+
+
+.destination:hover{
+    transform:scale(1.05);
+    border: 10px solid rgb(189, 7, 245);
+}
+
+
+
+/*------------------------About Us------------------------------*/
+
+#about-us{
+    color: black;
+}
+
+#about-us h2{
+    padding-bottom: 16px;
+    font-size: 50px;
+    color: #81177c;
+}
+
+#about-us p{
+    font-size: 20px;
+    color: black;
+    padding-top: 2px;
+}
+
+#about-us .about-us{
+    width: 88%;
+    display:inline-block;
+    text-align: left;
+    padding: 30px 50px;
+    border-radius: 40px;
+    background-color: white;
+    border: 10px solid white;
+    box-shadow: 0 02px 20px black;
+    transition: transform 0.6s ease;
+}
+
+.about-us:hover{
+    transform: scale(1.02);
+}
+
+
+/*------------------------Contact Us------------------------------*/
+
+#contact-us{
+    color: black;
+}
+
+#contact-us h2{
+    padding-bottom: 16px;
+    font-size: 50px;
+    color: #81177c;
+}
+
+#contact-us .contact-us{
+    width: 88%;
+    display:inline-block;
+    text-align: left;
+    padding: 30px 50px;
+    border-radius: 40px;
+    border: 10px solid white;
+    background-color: white;
+    box-shadow: 0 0px 20px black;
+    transition: transform 0.6s ease;
+}
+
+#contact-us .email{
+    padding-left: 100px;
+    padding-top: 15px;
+    align-items: center;
+    text-align: left;
+}
+
+#contact-us .teleno{
+    padding-left: 100px;
+    padding-top: 15px;
+    align-items: center;
+    text-align: left;
+}
+
+#contact-us img{
+    height:auto;
+    width: 50px;
+    padding: 0px 10px;
+}
+
+#contact-us a{
+    color: black;
+    font-size: 20px;
+    height:auto;
+    width: 50px;
+    padding: 0px 10px;
+}
+
+.contact-us:hover{
+    transform: scale(1.02);
+}
+
+/*-----------copyrigts-----------------*/
+
+.copyright{
+    color: #ffae00;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    padding: 25px 0;
+    background: #4e0e4b;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+
+
