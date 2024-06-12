@@ -360,14 +360,11 @@ header .respon a{
         display: none;
     }
 
-    .respon {
-        display: none;
+    header .respon {
+        display: flex;
         top: 0;
         right: 0;
-        background-color: #5d0557a1;
-        width: 10%;
-        height: 10000px;
-        border-radius: 10px;
+        background-color: #5d0557;
     }
 
     .respon ul {
