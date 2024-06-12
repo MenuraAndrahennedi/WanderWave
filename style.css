@@ -359,7 +359,7 @@ header .respon a{
     }
 
     .respon {
-        display: flex;
+        display: none;
         position: relative;
         top: 80px;
         right: 10px;
