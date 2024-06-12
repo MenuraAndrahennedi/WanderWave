@@ -352,7 +352,7 @@ header .respon a{
 
     header img{
         cursor: pointer;
-        width: 80%;
+        width: 50%;
     }
     nav ul {
         display: none;
@@ -388,7 +388,7 @@ header .respon a{
     .menu-toggle {
         display: flex;
         cursor: pointer;
-        padding: 10px;
+        padding: 5px;
         background-color: #5d0557a1;
         border: none;
         color: white;
