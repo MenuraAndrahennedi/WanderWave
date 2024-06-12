@@ -190,6 +190,11 @@ header .respon a{
     width: 90%;
 }
 
+.details p{
+    font-size: 32px; 
+    color:#ffae00;
+}
+
 .destination h2{
     font-size: 40px;
     font-weight: lighter;   
@@ -410,7 +415,55 @@ header .respon a{
     }
 
     #banner h1{
-        font-size: 300%;
+        font-size: 50px;
+    }
+
+    #banner h2{
+        padding: 0 0;
+        font-size: 20px;
+    }
+
+    #destinations h1{
+        font-size: 50px;
+    }
+    .destination h2{
+        font-size: 40px;  
+    }
+    .destination{
+        width: 80%;
+        padding: 100px 10px;
+    }
+    .details p{
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .paris{
+        margin-bottom: 10%;
+    }
+
+    .nyc{
+        margin-bottom: 10%;
+    }
+
+    .tokyo{
+        margin-bottom: 10%;
+    }
+
+    #about-us h2{
+        font-size: 30px;
+    }
+
+    #about-us p{
+        font-size: 15px;
+    }
+
+    #contact-us h2{
+        font-size: 30px;
+    }
+
+    #contact-us a{
+        font-size: 10px;
     }
 }
 
