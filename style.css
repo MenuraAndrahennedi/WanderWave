@@ -462,7 +462,19 @@ header .respon a{
         font-size: 30px;
     }
 
+    #contact-us .email{
+        padding-left: 5%;
+    }
+    
+    #contact-us .teleno{
+        padding-left: 5%;
+    }
+
     #contact-us a{
+        font-size: 10px;
+    }
+
+    .copyright{
         font-size: 10px;
     }
 }
