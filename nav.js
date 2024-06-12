@@ -10,3 +10,28 @@ function scrollFunction() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const responMenu = document.querySelector(".respon");
+
+    menuToggle.addEventListener("click", function() {
+        if (responMenu.style.display === "flex") {
+            responMenu.style.display = "none";
+        } else {
+            responMenu.style.display = "flex";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".close-toggle");
+    const responClose = document.querySelector(".respon");
+
+    menuToggle.addEventListener("click", function() {
+        if (responClose.style.display === "flex") {
+            responClose.style.display = "none";
+        } else {
+            responClose.style.display = "flex";
+        }
+    });
+});

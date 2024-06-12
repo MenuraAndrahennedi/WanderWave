@@ -43,8 +43,8 @@ section{
 
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     overflow: hidden;
     background-color: #5d0557a1;
     padding: 30px 10px;
@@ -70,6 +70,8 @@ header a{
 
 nav ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li{
@@ -85,8 +87,34 @@ header nav a:hover{
 
 header img{
     cursor: pointer;
-    padding-left: 50px;
 }
+
+
+header .respon{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    justify-content: flex-start;
+    background-color: #5d0557;
+    padding: 0px 0px;
+    transition: padding 0.7s;
+    position: fixed; 
+    height: 500px;
+    width: 360px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header .respon a{
+    font-size: 17px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
 
 
 
@@ -301,6 +329,87 @@ header img{
     font-weight: 300;
     margin-top: 0px;
 }
+
+
+
+
+/*------------------ Responsive------------------*/
+
+
+@media (max-width: 768px) {
+    header{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5d0557a1;
+        padding: 2px 2px;
+        transition: padding 0.7s;
+        position: fixed; 
+        width: 100%;
+        top: 0; 
+        z-index: 100;
+    }
+
+    header img{
+        cursor: pointer;
+        width: 80%;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .respon {
+        display: flex;
+        position: relative;
+        top: 80px;
+        right: 10px;
+        background-color: #5d0557a1;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .respon ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .respon ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .respon ul li a {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #5d0557a1;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .close-toggle {
+        display: flex;
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #5d0557a1;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+
+
+
 
 
 
