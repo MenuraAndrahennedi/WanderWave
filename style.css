@@ -115,6 +115,9 @@ header .respon a{
     display: none;
 }
 
+.close-toggle{
+    display: none;
+}
 
 
 
@@ -395,7 +398,7 @@ header .respon a{
         border-radius: 10px;
     }
     .close-toggle {
-        display: flex;
+        display: none;
         display: block;
         cursor: pointer;
         padding: 10px;
