@@ -100,8 +100,8 @@ header .respon{
     padding: 0px 0px;
     transition: padding 0.7s;
     position: fixed; 
-    height: 500px;
-    width: 360px;
+    height: 50%;
+    width: 100%;
     top: 0;
     right: 0;
     z-index: 100;
@@ -362,11 +362,11 @@ header .respon a{
 
     .respon {
         display: none;
-        position: relative;
-        top: 80px;
-        right: 10px;
+        top: 0;
+        right: 0;
         background-color: #5d0557a1;
-        width: 200px;
+        width: 10%;
+        height: 10000px;
         border-radius: 10px;
     }
 
