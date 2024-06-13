@@ -1,0 +1,389 @@
+@font-face {
+    font-family: navbar-font;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: title-font;
+    src: url(fonts/ClassicismoDEMO.otf);
+}
+@font-face {
+    font-family: titlebody-font;
+    src: url(fonts/ClarinetDEMO.otf);
+}
+@font-face {
+    font-family: button-font;
+    src: url(fonts/HeyComic.ttf);
+}
+@font-face {
+    font-family: body-font;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    min-height: 790px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf8fa;
+}
+
+.content-section{
+    font-family: body-font, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #5d0557a1;
+    padding: 10px 10px;
+    transition: padding 0.7s;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 100;
+}
+
+header a{
+    font-family: navbar-font, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    border-radius: 40px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+header nav a:hover{
+    background-image: linear-gradient( to right, #ffae00,rgb(189, 7, 245));
+    color: #81177c;
+}
+
+header img{
+    cursor: pointer;
+}
+
+
+header .respon{
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    justify-content: flex-start;
+    background-color: #5d0557;
+    padding: 0px 0px;
+    transition: padding 0.7s;
+    position: fixed; 
+    height: 50%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header .respon a{
+    font-size: 17px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.close-toggle{
+    display: none;
+}
+
+
+#selected{
+    background-image: linear-gradient( to right, #f3b42def,rgba(204, 72, 245, 0.952));
+    color: #81177c;
+}
+
+
+/*----------------------Banner-------------------*/
+
+#banner{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+#banner div{
+    position:absolute;
+    text-align: center;
+}
+
+#banner h1{
+    text-align: center;
+    margin-top: 16%;
+    font-weight: 100;
+    font-family: title-font, sans-serif;
+    color: white;
+    font-size: 170px;
+    transition: 1.5s;
+}
+
+#banner h2{
+    margin-bottom: 3%;
+    padding: 10px 300px;
+    font-weight: 10;
+    font-family: titlebody-font, sans-serif;
+    color: white;
+    font-size: 70px;
+}
+
+.btn{
+    cursor: pointer;
+    font-family: button-font, sans-serif;
+    font-size: 25px;
+    color: white;
+    border: #81177c;
+    background-image: linear-gradient( to left, #ffae00,rgb(189, 7, 245));
+    padding: 18px 70px;
+    border-radius: 55px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    color:aliceblue;
+    background-image: linear-gradient( to right, #ffae00,rgb(189, 7, 245));
+}
+
+
+
+/*----------------------Details--------------*/
+
+
+.details{
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+}
+
+.details h2{
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    font-size: 40px;
+    color: #81177c;
+}
+
+.details p{
+    text-align: center;
+    padding-top: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.details .btn{
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    font-family: button-font, sans-serif;
+    font-size: 17px;
+    color: white;
+    border: #81177c;
+    background-image: linear-gradient( to left, #fcbe3a,rgb(211, 77, 252));
+    padding: 15px 50px;
+    border-radius: 55px;
+    transition: 0.5s;
+}
+
+.details .btn:hover{
+    background-image: linear-gradient( to right, #ffae00,rgb(189, 7, 245));
+}
+
+
+
+/*-------------------Gallery----------------*/
+
+
+.gallery{
+    margin: auto;
+    justify-content: center;
+    width: 85%;
+}
+
+.gallery h2{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-size: 40px;
+    color: #81177c;
+}
+
+.images{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display:flex;
+}
+
+.image{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.image img{
+    width: 100%;
+}
+
+
+
+/*-----------copyrigts-----------------*/
+
+.copyright{
+    color: #ffae00;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    padding: 25px 0;
+    background: #4e0e4b;
+    font-weight: 300;
+    margin-top: 5%
+}
+
+
+
+
+
+
+
+
+
+/*------------------ Responsive------------------*/
+
+
+@media (max-width: 768px) {
+    header{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5d0557a1;
+        padding: 2px 2px;
+        transition: padding 0.7s;
+        position: fixed; 
+        width: 100%;
+        top: 0; 
+        z-index: 100;
+    }
+
+    header img{
+        cursor: pointer;
+        width: 50%;
+        left: 0%;
+        right: 0;
+    }
+    nav ul {
+        display: none;
+    }
+
+    header .respon {
+        display: flex;
+        top: 0;
+        right: 0;
+        background-color: #5d0557;
+    }
+
+    .respon ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .respon ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .respon ul li a {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #5d0557a1;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .close-toggle {
+        display: none;
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #5d0557a1;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    #banner h1{
+        font-size: 50px;
+    }
+
+    #banner h2{
+        padding: 0 0;
+        font-size: 20px;
+    }
+
+    .details h2{
+        padding-top: 12%;
+        font-size: 30px;
+    }
+
+    .details p{
+        font-size: 15px;
+    }
+
+    .gallery h2{
+        padding-top: 15%;
+        padding-bottom: 5%;
+        font-size: 30px;
+    }
+
+    .images{
+        display: block;
+    }
+
+    .copyright{
+        font-size: 10px;
+    }
+
+    
+}
+

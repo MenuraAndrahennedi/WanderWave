@@ -125,6 +125,7 @@ header .respon a{
 
 #banner{
     background-image: url(media/homebg.png);
+    background-attachment: fixed;
 }
 
 #banner div{
@@ -152,6 +153,7 @@ header .respon a{
 }
 
 .btn{
+    cursor: pointer;
     font-family: button-font, sans-serif;
     font-size: 30px;
     color: white;
@@ -172,7 +174,8 @@ header .respon a{
 /*------------------------destinations------------------------------*/
 
 #destinations{
-    text-align:  center;
+    justify-content: center;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     padding: 10px 10px;
@@ -201,13 +204,16 @@ header .respon a{
 }
 
 .destination{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 25%;
     display:inline-block;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
-    padding: 130px 10px;
+    padding: 10px;
+    padding-top: 130px;
+    padding-bottom: 80px;
     border-radius: 40px;
     border: 10px solid white;
     box-shadow: 0 0px 50px black;
@@ -231,6 +237,28 @@ header .respon a{
     transform:scale(1.05);
     border: 10px solid rgb(189, 7, 245);
 }
+
+.desbtn{
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    display: flex;
+    font-family: button-font, sans-serif;
+    font-size: 18px;
+    color: white;
+    border: #81177c;
+    background-image: linear-gradient( to left, #ffae00,rgb(189, 7, 245));
+    padding: 18px 70px;
+    border-radius: 55px;
+    transition: 0.5s;
+}
+
+.desbtn:hover{
+    color:aliceblue;
+    background-image: linear-gradient( to right, #ffae00,rgb(189, 7, 245));
+}
+
+
 
 
 
